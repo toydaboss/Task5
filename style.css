@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe3 100%);
+    height: 100%;
+    width: 100%;
+}
+.container{
+    width: 80%;
+    height: 450px;
+    position: relative;
+    margin: 100px auto;
+    overflow: hidden;
+}
+.btn-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 1px solid #ccc; */
+}
+.btn-box button{
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgb(204, 204, 204);
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: ease-in-out;
+}
+small{
+    display: none;
+}
+.btn-box button:hover{
+    color:#ff7846;
+}
+.btn-box button::after{
+    color: aliceblue;
+    background-color: #ff7846;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    transform: translateX(100%);
+    transition: 0.3s;
+    height: 95%;
+    width: 100%;
+}
+.content-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.input{
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+#content1{
+    transform: translateX(0%);
+}
+#btn-1{
+    color: #ff7846;
+}
+.active{
+    color: red;
+    display: block;
+}
+.fas{
+    font-size: 2rem;
+    margin: 1rem;
+}
+.load{
+    animation-name: loader;
+    animation-duration: 2450ms;
+}
+.submit{
+    width: 75px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+@keyframes loader {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+}

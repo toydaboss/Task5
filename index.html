@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Task 5</title>
+</head>
+<body>
+    <div class="container">
+        <div class="btn-box">
+            <button id="btn-1" class="button" onclick="openTemp()">Temperature</button>
+            <button id="btn-2" class="button" onclick="openYugi()">Yu-Gi-Oh</button>
+        </div>
+        <div id="content1" class="content">
+            <div class="content-box">
+                <input type="text" name="temp" id="tempBox" class="input" placeholder="Input value..."><button type="submit" onclick="submitTemp()" class="submit">Convert</button>
+                <small id="error1" class=""></small>
+                <i class="fas fa-sync-alt" id="icon1" onclick="submitTemp()"></i>
+                <div id="resultDisplay">
+                    <h1 id="result">0 °C</h1>
+                </div>
+            </div>
+        </div>
+        <div id="content2" class="content">
+            <div class="content-box">
+                <input type="text" name="temp" id="yugiBox" class="input" placeholder="Input value..."><button type="submit" onclick="submitYugi()" class="submit" >Read Card</button>
+                <small id="error2" class=""></small>
+                <i class="fas fa-hourglass-start" id="icon2"></i>
+                <div id="yugiDisplay">
+                    <h3 id="yugiResult">[0]</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
